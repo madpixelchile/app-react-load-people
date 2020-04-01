@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/scss/main.scss';
+
+import {HeaderComponent} from './Components/HeaderComponent/HeaderComponent';
+import {ShowPeopleComponent} from './Components/ShowPeopleComponent/ShowPeopleComponent';
+import {FooterComponent} from './Components/FooterComponent/FooterComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <HeaderComponent />
+
+        <main className={`container`}>
+
+          <div className={`row`}>
+
+            <div className={`col-md-6 col-md-offset-3`}>
+
+              <ShowPeopleComponent />
+            
+            </div>
+          
+          </div>
+
+        </main>
+
+        {
+          /* Enviamos una prop desde el JSX al estado inicial dentro del constructor y la 
+          reflejamos en el render */
+        }
+        <FooterComponent footerTitle={`Juan Escudero`} myHref={`https://github.com/madpixelchile/`} />
+
     </div>
   );
 }

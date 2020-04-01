@@ -1,0 +1,68 @@
+
+
+$color-base: #666;
+$color-primary: #444;
+$color-primary-hover: #555;
+$color-primary-active: #868686;
+$color-button: white;
+$color-bg-button: #444;
+$color-white: white;
+$color-bg: #676767;
+$color-colored-text: #f778a0;
+
+
+
+
+
+/*------------------------------------------------------------------------------Font base */
+
+$font-size-base: 			  16px;
+
+$font-family-base: 			 'Roboto';
+
+$font-family-light:   		 'Roboto';
+$font-family-medium:  		 'Roboto';
+$font-family-bold:    		 'Roboto';
+$font-family-bold-italic:    'Roboto';
+
+/*------------------------------------------------------------------------------Line height base */
+
+$line-height-base: 140%;
+
+/*------------------------------------------------------------------------------Font weight */
+	
+	$font-weight-light:  	100;
+	$font-weight-normal: 	300;
+	$font-weight-bold:   	600;
+	$font-weight-black:   	800;
+
+
+/*------------------------------------------------------------------------------Font size */
+
+$font-size-h1: 32px;
+$font-size-h2: 24px;
+$font-size-h3: 32px;
+$font-size-h4: 32px;
+$font-size-h5: 22px;
+$font-size-h6: 20px;
+
+/*------------------------------------------------------------------------------Breakpoints */
+
+$screen-xxs-min: 	 400px;
+$screen-xs-min: 	 560px;
+$screen-sm-min: 	 768px;
+$screen-md-min: 	 992px;
+$screen-l-min: 		1199px;
+$screen-lg-min: 	1200px;
+$screen-xl-min: 	1280px;
+
+
+/*------------------------------------------------------------------------------Mixins */
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+ -o-border-radius: $radius;
+-ms-border-radius: $radius;
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+}

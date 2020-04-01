@@ -1,0 +1,67 @@
+
+
+/*------------------------------------------------------------------------------Buttons */
+
+button{
+  background: none;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  border: none;
+
+  cursor: pointer;
+
+  &:active, &:hover, &:focus {
+      outline: none;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  @include border-radius(36px);
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+  text-decoration: none !important;
+  position: relative;
+  vertical-align: middle;
+  margin: 20px auto 20px;
+  appearance: none;
+  font-size: 16px;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  border-radius: 3px;
+  border: none;
+  
+  font-family: $font-family-bold;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  &-primary {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &.active{
+      background-color: $color-primary-active;
+      &:hover {
+        background-color: $color-primary-active;
+      }
+    }
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+    
+    &:active{
+      background-color: $color-primary-hover;
+      box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    }
+  }
+
+}
+
+
+
+

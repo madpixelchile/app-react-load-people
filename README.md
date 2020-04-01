@@ -1,8 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Desarrollo desafío APP login 
+Desarrollado con node y dependencias generadas con npx create-react-app my-project-name
+
+## SCSS incorporado en dependencias
+Se incorpora el módulo de SASS para desarrollar de forma más resumida, limpia y ordenada.
+yarn add node-sass-chokidar
+
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: 
 
 ### `yarn start`
 
@@ -66,3 +74,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+

@@ -1,0 +1,61 @@
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    background-color: $color-bg;
+    color: $color-base;
+    font-weight: normal;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font: {
+      family: $font-family-base;
+      size: $font-size-base;
+    };
+    
+    @media (max-width: $screen-md-min) {
+       font-size: 14px;   
+    }
+    
+  }
+
+
+
+main{
+    min-height: 450px;
+}
+
+
+/*------------------------------------------------------------------------------General text cont */
+  
+p{
+    font-size: 13px;
+}
+
+/*------------------------------------------------------------------------------Strong */
+  
+ strong {
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------Links */
+  
+a {
+    color: $color-colored-text;
+    font-family: $font-family-base;
+    outline: 0;
+    text-decoration: none;
+    &:active, &:hover, &:focus {
+        outline: none;
+    }
+}
+
+
+// Helpers
+
+.text-center{
+    text-align: center;
+}
