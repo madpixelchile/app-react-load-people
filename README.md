@@ -6,7 +6,15 @@ Desarrollado con node y dependencias generadas con npx create-react-app my-proje
 
 ## SCSS incorporado en dependencias
 Se incorpora el módulo de SASS para desarrollar de forma más resumida, limpia y ordenada.
+<br/>
 yarn add node-sass-chokidar
+
+## Desplegar entorno de trabajo
+Debes contar con git, node, yarn, npm en tu ordenador.<br/>
+Paso 2. Clonar proyecto en la carpeta seleccionada.<br/>
+Paso 3. Entrar a la carpeta del proyecto clonado y ejecutar el comando "yarn install" para generar el despliegue de los módulos de node.
+Paso 4. Para testear (yarn start). Para publicar (yarn build). 
+
 
 ## Available Scripts
 
