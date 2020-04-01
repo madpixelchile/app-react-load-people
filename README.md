@@ -10,11 +10,10 @@ Se incorpora el módulo de SASS para desarrollar de forma más resumida, limpia 
 yarn add node-sass-chokidar
 
 ## Desplegar entorno de trabajo
-Debes contar con git, node, yarn, npm en tu ordenador.<br/>
+Paso 1. Debes contar con git, node, yarn, npm en tu ordenador.<br/>
 Paso 2. Clonar proyecto en la carpeta seleccionada.<br/>
-Paso 3. Entrar a la carpeta del proyecto clonado y ejecutar el comando "yarn install" para generar el despliegue de los módulos de node.
+Paso 3. Entrar a la carpeta del proyecto clonado y ejecutar el comando "yarn install" para generar el despliegue de los módulos de node.<br/>
 Paso 4. Para testear (yarn start). Para publicar (yarn build). 
-
 
 ## Available Scripts
 
