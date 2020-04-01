@@ -9,12 +9,30 @@ Se incorpora el módulo de SASS para desarrollar de forma más resumida, limpia 
 <br/>
 yarn add node-sass-chokidar
 
-## Desplegar entorno de trabajo
+## Entorno de trabajo
 Paso 1. Debes contar con git, node, yarn, npm en tu ordenador.<br/>
 Paso 2. Clonar proyecto en la carpeta seleccionada.<br/>
 Paso 3. Entrar a la carpeta del proyecto clonado y ejecutar el comando "yarn install" para generar el despliegue de los módulos de node.<br/>
-Paso 4. Para testear (yarn start). Para publicar (yarn build). <br/>
-paso 5. Configurar "package.json" - "homepage": "https://app-react-22022.web.app" o "http://url-de-produccion" en donde se va a visualizar esta SPA<br/>
+Paso 4. Para testear (yarn start). <br/>
+
+
+## Deploy
+Configurar "package.json" - "homepage": "https://app-react-22022.web.app" o "http://url-de-produccion" en donde se va a visualizar esta SPA<br/>
+Para publicar o generar producto final, comando(yarn build).
+
+## Deploy directo a Firebase
+
+Crear cuenta en Firebase y crear proyecto.<br/>
+Configurar Firebase en el ordenador - comando: curl -sL firebase.tools | bash<br/>
+Login en Firebase desde la terminal y acceder a la cuenta de correo asociada a Firebase - comando: firebase login.<br/>
+En el menú de opciones desde la consola seleccionar hosting<br/>
+Posteriormente seleccionar el proyecto en el listado de consola<br/>
+Generar build "yarn build", y editar el archivo firebase.json en el apartado de "public", ingresar el nombre de la carpeta generada, en este caso "build".<br/>
+Usar comando "firebase deploy", y los datos serán subidos al servidor.<br/> Finalmente La consola arrojará la url de destino.
+
+
+
+
 
 ## Available Scripts
 
