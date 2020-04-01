@@ -53,6 +53,7 @@ export class ShowPeopleComponent extends Component{
         this.setState({
             toggleClass: !this.state.toggleClass,
         })
+
         // console.log(document.all); //Accedo a propiedades del HTML Collection del DOM
     }
 
@@ -88,7 +89,7 @@ export class ShowPeopleComponent extends Component{
         const loadedDataDone = this.state.loadedData; 
         const personKey = this.state.personNumber;
 
-        console.log(loadedDataDone); //Para ver si cargan los datos de la promesa y además ver la estructura
+        // console.log(loadedDataDone); //Para ver si cargan los datos de la promesa y además ver la estructura
 
         return(
             
