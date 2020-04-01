@@ -13,7 +13,8 @@ yarn add node-sass-chokidar
 Paso 1. Debes contar con git, node, yarn, npm en tu ordenador.<br/>
 Paso 2. Clonar proyecto en la carpeta seleccionada.<br/>
 Paso 3. Entrar a la carpeta del proyecto clonado y ejecutar el comando "yarn install" para generar el despliegue de los módulos de node.<br/>
-Paso 4. Para testear (yarn start). Para publicar (yarn build). 
+Paso 4. Para testear (yarn start). Para publicar (yarn build). <br/>
+paso 5. Configurar "package.json" - "homepage": "https://app-react-22022.web.app" o "http://url-de-produccion" en donde se va a visualizar esta SPA<br/>
 
 ## Available Scripts
 
