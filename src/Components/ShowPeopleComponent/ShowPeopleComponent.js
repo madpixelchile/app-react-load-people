@@ -32,6 +32,12 @@ export class ShowPeopleComponent extends Component{
 
     componentDidMount = ()=>{
         
+        //Utilizamos el método fetch para acceder al servicio o datos json
+        //Existe otra alternativa con axios que funciona de la misma forma, pero se orienta a navegadores
+        //mas antiguos y requiere de una instalación en las dependencias.
+
+        //fetch se compone por promesas, en donde al obtener el resultado tomamos el parámetro 
+        //de la primera promesa y en su salida lo conectamos con el metodo json.
         fetch('https://randomuser.me/api/?results=10').then((resolve)=>{
             return resolve.json();
         }).then((data)=>{
@@ -40,11 +46,15 @@ export class ShowPeopleComponent extends Component{
                 loadedData: data,
             })
 
+            //En la segunda promesa cambiamos el estado inicial utilizando su parámetro, en ese caso "data"
+
         }).catch((error)=>{
             console.log(error);
             this.setState({
                 errorMessage: true,
             });
+            //Esta fase de las promesas "catch" es para el caso de que no se cumpla la carga de json
+            //y mostraremos una alerta con el error (borrar la url del fetch para ver resultado)
         })
 
     }
@@ -66,9 +76,9 @@ export class ShowPeopleComponent extends Component{
         // console.log(itemKey); //Hacemos pruebas de obtención de datos del dom
 
         this.setState({
-            toggleClass: false,
-            showPersonName: itemText,
-            personNumber: itemKey,
+            toggleClass: false,  //Al hacer click en una persona ocultaremos el menú y quitaremos el estado activo del botón detonador
+            showPersonName: itemText, //Cambiamos el estado para mostrar el nombre de la persona a modo título en el módulo
+            personNumber: itemKey, //Obtenemos el número de la key de cada persona para lograr otras interacciones ocupando su key.
         });
 
         //Para que tenga un fade in el padre de un contenido que no existe solo en el primer intento
@@ -152,7 +162,8 @@ export class ShowPeopleComponent extends Component{
                                         { 
                                             loadedDataDone ? 
                                                 <div className={`content-data`}><div>{ `Name:` }</div>
-                                                    <div>{
+                                                    <div>{ 
+                                                        //Object values es para obtener el valor de cada propiedad del objeto
                                                         Object.values(loadedDataDone.results['' + personKey + ''].name).map((obj,i)=>(
                                                             <span key={i}>{obj}</span>
                                                         ))
@@ -164,6 +175,7 @@ export class ShowPeopleComponent extends Component{
                                         { loadedDataDone ? <div className={`content-data`}><div>{ `Email:` }</div><div>{ loadedDataDone.results['' + personKey + ''].email }</div></div> : '' }
                                         { loadedDataDone ? <div className={`content-data`}><div>{ `Phone:` }</div><div>{ loadedDataDone.results['' + personKey + ''].phone }</div></div> : '' }
                                         { loadedDataDone ? <div className={`content-data`}><div>{ `Location:` }</div><div className={`box-multiple-data`}>{
+                                            //Haremos un object keys para recorrer todos los nombres de las propiedades de este objeto
                                             Object.keys(loadedDataDone.results['' + personKey + ''].location).map((obj,i)=>(
                                                 <span key={i}>
                                                     {   
