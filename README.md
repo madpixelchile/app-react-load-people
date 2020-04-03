@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Desarrollo explicado en el archivo: "./Components/ShowPeopleComponent-explicado.js"
 
 ## Desarrollo desafío APP login 
-Desarrollado con node y dependencias generadas con npx create-react-app my-project-name y bajo el concepto "first offline WPA"
+Desarrollado con node y dependencias generadas con npx create-react-app my-project-name y bajo el concepto "first offline WPA" (Testear instalador de la web en el dispositivo móvil y usar la herramienta de navegador "lighthouse para hacer prueba de performance").
 
 ## SCSS incorporado en dependencias
 Se incorpora el módulo de SASS para desarrollar de forma más resumida, limpia y ordenada.
