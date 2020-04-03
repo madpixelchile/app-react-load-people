@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Importante para revisión
-Desarrollo explicado en el arcivo: "./Components/ShowPeopleComponent-explicado.js"
+Desarrollo explicado en el archivo: "./Components/ShowPeopleComponent-explicado.js"
 
 ## Desarrollo desafío APP login 
 Desarrollado con node y dependencias generadas con npx create-react-app my-project-name
