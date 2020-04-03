@@ -122,7 +122,7 @@ export class ShowPeopleComponent extends Component{
                                                     <div>{ 
                                                         
                                                         Object.values(loadedDataDone.results['' + personKey + ''].name).map((obj,i)=>(
-                                                            <span key={i}>{obj}</span>
+                                                            <span key={i}>{' ' + obj}</span>
                                                         ))
                                                     }</div>
                                                 </div>
