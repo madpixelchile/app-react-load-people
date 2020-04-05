@@ -119,12 +119,13 @@ function checkValidServiceWorker(swUrl, config) {
       } else {
         // Service worker found. Proceed as normal.
         registerValidSW(swUrl, config);
+        console.log('normal load of site');
+        document.querySelector('body').classList.remove('offline-mode');
       }
     })
     .catch(() => {
-      console.log(
-        'No internet connection found. App is running in offline mode.'
-      );
+      console.log('No internet connection found. App is running in offline mode. AIRRRRT!');
+      document.querySelector('body').className = 'offline-mode';
     });
 }
 

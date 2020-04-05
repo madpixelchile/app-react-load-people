@@ -3,7 +3,7 @@
 
 $color-deploy-button: #4e4e4e;
 
-
+$color-offline-mode: #956bd8;
 
 .people-component{
     display: flex;
@@ -186,4 +186,19 @@ $color-deploy-button: #4e4e4e;
     background: #d86b6b;
     padding: 20px;
     border-radius: 3px;
+    width: 100%;
+    text-align: center;
+
+    &--offline{
+        background: $color-offline-mode;
+        display: none;
+    }
+}
+
+.offline-mode{
+    .alert-message{
+        &--offline{
+            display: table;
+        }
+    }
 }

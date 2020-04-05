@@ -106,6 +106,13 @@ export class ShowPeopleComponent extends Component{
                     }
 
                     {
+                        <span className={`alert-message alert-message--offline`}>
+                        {`You're not connected to the Internet`} <br/>
+                        {`Dinosaurs are not accepted here ;)`}
+                        </span> 
+                    }
+
+                    {
                         this.state.showPersonName ? 
 
                             <div className={`show-data-table-parent ${this.state.addClass ? 'active' : ''}`}>
